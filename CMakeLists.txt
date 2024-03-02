@@ -23,7 +23,7 @@ if(BUILD_TESTING)
 endif()
 
 install(
-  DIRECTORY bbot_description config launch meshes resource test urdf
+  DIRECTORY bbot_description config launch meshes resource test urdf worlds
   DESTINATION share/${PROJECT_NAME}
 )
 
