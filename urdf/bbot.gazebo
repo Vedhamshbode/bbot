@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <robot name="bbot" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-<gazebo>
+<!-- <gazebo>
   <plugin name="control" filename="libgazebo_ros_control.so"/>
-</gazebo>
+</gazebo> -->
 <gazebo reference="base_link">
   <material>Gazebo/White</material>
   <mu1>0.2</mu1>
@@ -38,6 +38,32 @@
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo>
+  <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
+
+    <!-- Wheel Information -->
+    <left_joint>baselink_leftwheel_joint</left_joint>
+    <right_joint>baselink_rightwheel_joint</right_joint>
+    <wheel_separation>0.225</wheel_separation>
+    <wheel_diameter>0.065</wheel_diameter>
+
+
+    <!-- Limits -->
+    <max_wheel_torque>200</max_wheel_torque>
+    <max_wheel_acceleration>10.0</max_wheel_acceleration>
+
+    
+    <!-- Output -->
+    <odometry_frame>odom</odometry_frame>
+    <robot_base_frame>base_footprint</robot_base_frame>
+
+    <publish_odom>true</publish_odom>
+    <publish_odom_tf>true</publish_odom_tf>
+    <publish_wheel_tf>true</publish_wheel_tf>
+
+  </plugin>
 </gazebo>
 
 </robot>
