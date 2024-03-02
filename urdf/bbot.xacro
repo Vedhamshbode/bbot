@@ -6,6 +6,7 @@
 <xacro:include filename="$(find bbot_description)/urdf/bbot.gazebo" />
 <!-- <xacro:include filename="gazebo_control_bbot.xacro" /> -->
 <xacro:include filename="$(find bbot_description)/urdf/lidar.xacro" />
+<xacro:include filename="$(find bbot_description)/urdf/camera.xacro" />
 
 
 
