@@ -55,6 +55,6 @@ Modify the configuration files in the config/ directory as needed to match your 
    ```
 2. **Monitor and Control**:
 Use ROS2 tools and interfaces to monitor the robot’s status and control its navigation. For example, you can visualize the robot’s path using:
-```bash
-ros2 run rviz2 rviz2
-```
+   ```bash
+   ros2 run rviz2 rviz2
+   ```
