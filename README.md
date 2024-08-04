@@ -28,26 +28,31 @@ This repository contains the code and documentation for a self-localization and 
 - **`examples/`**: Sample code and example configurations demonstrating system functionality.
 
 ## Installation
-
-1. **Clone the Repository**:
+1. **Make a src folder**:
+Make a source folder in you workspace
    ```bash
-   git clone https://github.com/yourusername/localization-technology.git
+   mkdir src
+   cd src
    ```
-2. **Install Dependencies**:
+2. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Vedhamshbode/bbot_description.git
+   ```
+3. **Install Dependencies**:
 Ensure you have ROS2, OpenCV, and other required libraries installed on your system. Follow the installation instructions provided in the docs/ directory.
-3. **Build the Project**:
+4. **Build the Project**:
 Navigate to the root of the repository and build the project:
    ```bash
-   cd localization-technology
+   cd bbot_description
    colcon build
    ```
-4. **Setup and Configuration**:
+5. **Setup and Configuration**:
 Modify the configuration files in the config/ directory as needed to match your hardware setup. For example, you may need to adjust the sensor calibration parameters.
 
 ## Usage
 1. **Launch the system**:
    ```bash
-   ros2 launch localization_system localization_system.launch.p
+   ros2 launch bbot_description launch_sim.launch.py
    ```
 2. **Monitor and Control**:
 Use ROS2 tools and interfaces to monitor the robot’s status and control its navigation. For example, you can visualize the robot’s path using:
