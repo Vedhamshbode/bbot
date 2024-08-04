@@ -32,3 +32,14 @@ This repository contains the code and documentation for a self-localization and 
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/yourusername/localization-technology.git
+   ```
+2. **Install Dependencies**:
+Ensure you have ROS2, OpenCV, and other required libraries installed on your system. Follow the installation instructions provided in the docs/ directory.
+3. **Build the Project**:
+Navigate to the root of the repository and build the project:
+   ```bash
+   cd localization-technology
+   colcon build
+   ```
+4. **Setup and Configuration**:
+Modify the configuration files in the config/ directory as needed to match your hardware setup. For example, you may need to adjust the sensor calibration parameters.
