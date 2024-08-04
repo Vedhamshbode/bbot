@@ -41,9 +41,8 @@ Make a source folder in you workspace
 3. **Install Dependencies**:
 Ensure you have ROS2, OpenCV, and other required libraries installed on your system. Follow the installation instructions provided in the docs/ directory.
 4. **Build the Project**:
-Navigate to the root of the repository and build the project:
+Navigate to the workspace and build the project:
    ```bash
-   cd bbot_description
    colcon build
    ```
 5. **Setup and Configuration**:
