@@ -43,3 +43,14 @@ Navigate to the root of the repository and build the project:
    ```
 4. **Setup and Configuration**:
 Modify the configuration files in the config/ directory as needed to match your hardware setup. For example, you may need to adjust the sensor calibration parameters.
+
+## Usage
+1. **Launch the system**:
+   ```bash
+   ros2 launch localization_system localization_system.launch.p
+   ```
+2. **Monitor and Control**:
+Use ROS2 tools and interfaces to monitor the robot’s status and control its navigation. For example, you can visualize the robot’s path using:
+```bash
+ros2 run rviz2 rviz2
+```
