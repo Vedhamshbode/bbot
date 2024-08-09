@@ -58,14 +58,3 @@ Use ROS2 tools and interfaces to monitor the robot’s status and control its na
    ```bash
    ros2 run rviz2 rviz2
    ```
-Localization Technology Development and Implementation
-Prof. Jose Immanuel
-◦ Developed System for self-localization and navigation using onboard sensors for a ground robot
-which is capable of
-navigating autonomously.
-◦ Used Micro ROS and Rosserial library to interface sensors with ESP32 and Arduino for low level
-control.
-◦ Tools and Technologies : ROS2, OpenCV, SLAM, Navigation
-GitHub Link: https://github.com/Vedhamshbode/bbot
-_
-description.git
